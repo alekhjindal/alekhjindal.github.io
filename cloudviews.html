@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
+    <meta http-equiv="Keywords" content="Microsoft,Microsoft CISL,Microsoft Reserach,database research,Database Systems,Big Data">
+     
+    <meta name="author" content="Alekh Jindal "> 
+    <link rel="stylesheet" type="text/css" href="./files/style.css">
+    <title>CloudViews</title>
+</head> 
+ 
+ 
+<body>
+    <div class="divHead">
+    <table cellpadding="0" cellspacing="0" width="650">
+      <tbody>
+      <tr>
+        <td valign="center">
+            <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0" max-age=3600></a>
+        </td>
+        
+      </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <hr noshade width="100%" color="#993333">
+    
+    <table>
+      <tbody><tr> 
+    
+        <td valign="top" width="750">
+         
+ 
+ 
+        <br>
+        <img src="files/cloudviews.jpg" class="img img-avatar" alt="CloudViews" width="400">
+        
+        <p align="justify">
+        Analytics-as-a-service, or analytics job service, is emerging as a new paradigm for enterprise data analytics. 
+        These services are motivated by the fact that setting up and running data analytics is a major hurdle for enterprises. Although platform as a service (PaaS), software as a service (SaaS), and more recently database as a service (DBaaS) have eased the pain of provisioning and scaling hardware and software infrastructures, users are still responsible for managing and tuning their servers. A job service mitigates this pain by offering server-less analytics capability that does not require users to provision and manage servers. Instead, the service provider takes care of managing and tuning a query engine that can scale instantly and on demand. Users can get started quickly using the all familiar SQL interface and pay only for the processing used for each query, in contrast to paying for the entire provisioned server infrastructure irrespective of the compute resources actually used.
+        </p>
+        
+        <p align="justify">
+        At Microsoft, SCOPE is an analytics-as-a-service which is used for internal data analytics. SCOPE is deployed over hundreds of thousands of machines, running hundreds of thousands of production analytic jobs per day that are written by thousands of developers, processing several exabytes of data per day, and involving several hundred petabytes of I/O. SCOPE users are not required to manage or tune their hardware and software infrastructure, and they concentrate only on their processing logic.
+        However, the shared nature of SCOPE job service across several users and teams leads to significant overlaps in partial computations, i.e., parts of the processing are duplicated across multiple jobs, thus generating redundant costs. The goal of CloudViews is to automatically detect and reuse overlapping computations in the SCOPE job service, while allowing users to write their jobs just as before, i.e., with zero changes to user scripts.
+        </p>
+        
+        
+        <br>
+        <font size="5">Publications</font>
+        <ul>
+            <li>
+                Alekh Jindal<br>
+                <b>Applied Research Lessons from CloudViews Project</b> <br>
+                <font color="brown">SIGMOD Record</font> (to appear)
+            </li>
+            <br>  
+            <li>
+                Abhishek Roy, Alekh Jindal, Hiren Patel, Ashit Gosalia, Subru Krishnan, Carlo Curino<br>
+                <a href="http://www.vldb.org/pvldb/vol12/p1850-roy.pdf">SparkCruise: Handsfree Computation Reuse in Spark</a> <br>
+                <font color="brown">VLDB 2019/PVLDB</font>, Los Angeles, USA. (Demo paper)
+            </li>
+            <br>            
+            <li>
+                Alekh Jindal, Konstantinos Karanasos, Sriram Rao, Hiren Patel<br>
+                <a href="papers/p800-jindal.pdf">Selecting Subexpressions to Materialize at Datacenter Scale</a> <br>
+                <font color="brown">VLDB 2018/PVLDB</font>, Rio de Janeiro, Brazil.
+            </li>
+            <br>            
+            <li>
+                Alekh Jindal, Shi Qiao, Hiren Patel, Jarod Yin, Jieming Di, Malay Bag, Marc Friedman, Yifung Lin, Konstantinos Karanasos, Sriram Rao<br>
+                <a href="papers/modip650-jindalA.pdf">Computation Reuse in Analytics Job Service at Microsoft</a> <br>
+                <font color="brown">SIGMOD 2018</font>, Houston, USA.
+            </li>            
+		</ul>
+        
+        
+        
+        <br>
+
+        <font size="5">Talks and Posters</font>
+        <ul>
+            <li>
+                <a href="slides/CloudViews_SIGMOD18.pdf">Computation Reuse in Analytics Job Service at Microsoft</a> <br>
+                Presenter: Alekh Jindal<br>
+                SIGMOD 2018, Houston, USA.
+            </li>
+            <br>
+            <li>
+                <a href="posters/cloudviews-poster-sigmod18.pdf">CloudViews Poster</a> <br>
+                Presenters: CloudViews Team<br>
+                SIGMOD 2018, Houston, USA.
+            </li>
+        </ul>
+
+        <br>
+        <font size="5">Patents</font>
+        <ul>
+            <li>
+                A Jindal, K Karanasos, HS Patel, S Rao Sriram <br>
+                <i>Selection of Subexpressions to Materialize for Datacenter Scale</i><br>
+                <font color="brown">US Patent App. 15/884,282</font>
+            </li>
+            <br>
+            <li>
+                A Jindal, H Patel, Q Shi, J Di, MK Bag, Z Yin <br>
+                <i>Computation Reuse in Analytics Job Service</i><br>
+                <font color="brown">US Patent App. 15/952,347</font>
+            </li>
+        </ul>
+    </td> 
+    </tr> 
+    </tbody></table> 
+ 
+
+ 
+ </body></html>

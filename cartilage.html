@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
+    <meta http-equiv="Keywords" content="MIT,MIT CSAIL,MIT database research,Database Systems,Big Data">
+     
+    <meta name="author" content="Alekh Jindal "> 
+    <link rel="stylesheet" type="text/css" href="./files/style.css">
+    <title>Cartilage</title>
+    <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-42416460-1', 'mit.edu');
+            ga('send', 'pageview');
+    </script>
+</head> 
+ 
+ 
+<body>
+    <div class="divHead">
+    <table cellpadding="0" cellspacing="0" width="650">
+      <tbody>
+      <tr>
+        <td valign="center">
+            <a href="http://web.mit.edu/"><img src="./files/mit-redgrey-header3.gif" alt="MIT" title="MIT" height="50" border="0"></a>
+        </td>
+        <td align="left">
+            <a href="http://db.csail.mit.edu/"><img src="./files/header.png" alt="Database Group" title="MIT CSAIL" height="90" border="0"></a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <hr noshade width="100%" color="#993333">
+    
+    <table>
+      <tbody><tr> 
+    
+        <td valign="top" width="750">
+         
+ 
+ 
+        <br>
+        <font size="6">Cartilage</font><br><br><br>
+        
+        <p align="justify">
+        Data preparation, or database design in general, is a significant step before performing data analysis. Increasingly, this step is now also a precursor to several big data applications. Such data preparation could involve logical transformations, e.g., data cleaning, data integration, sampling, as well as physical data transformations, e.g., partitioning, indexing, compression, at different data granularities. Unfortunately, current large-scale data management platforms provide little or no support for such data preparation.
+        </p>
+        
+        <br><br>
+        <img src="files/cartilage.jpg" class="img img-avatar" alt="Cartilage" width="200">
+        <br>
+        
+        <p align="justify">
+        The goal of Cartilage is to allow developers to have full control over data preparation in a distributed file system, such as HDFS. Cartilage provides a dataset abstraction between the logical user dataset and the actual physical HDFS files. We introduced data plans, analogous to query plans, to enable users to declaratively specify their transformations, from the logical dataset to the physical HDFS files. The Cartilage execution engine maintains the lineage of data transformation and developers can exploit this lineage to make fine-granular transformation decisions. Cartilage sits on top of HDFS and could be used with several data processing systems that have HDFS as the underlying storage. We used Cartilage to build a scalable data cleaning system for violation detection and repair. This system compiles the data quality rules provided by the user into a series of transformations and runs them in a distributed fashion, outperforming baseline systems by up to more than two orders of magnitude over a variety of data cleaning tasks.
+        </p>
+        
+        <br>
+        <font size="5">Publications</font>
+        <ul>
+            <li>
+                Alekh Jindal, Anil Shanbhag, Yi Lu<br>
+                <a href="papers/RobustPartitioning.pdf">Robust Data Partitioning</a> <br>
+                <font color="brown">Encyclopedia of Big Data Technologies, 2019</font>, Springer.<br>
+                <b><font color="#009933">Invited Chapter</font></b>
+            </li>
+            <br>            
+            <li>
+                Anil Shanbhag, Alekh Jindal, Samuel Madden, Jorge Quiane, Aaron Elmore<br>
+                <a href="papers/hyperPartitioning.pdf">A Robust Partitioning Scheme for Ad-Hoc Query Workloads</a> <br>
+                <font color="brown">SOCC 2017</font>, Santa Clara, USA.
+            </li>
+            <br>
+            <li>
+                Yi Lu, Anil Shanbhag, Alekh Jindal, Samuel Madden<br>
+                <a href="papers/p589-lu.pdf">AdaptDB: Adaptive Partitioning for Distributed Joins</a> <br>
+                <font color="brown">VLDB 2017</font>, Munich, Germany.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Jorge-Arnulfo Quiane-Ruiz, Samuel Madden <br>
+                <a href="https://arxiv.org/pdf/1701.06093v1">IngestBase: A Declarative Data Ingestion System</a> <br>
+                <font color="brown">arXiv:1701.06093 [cs.DB], Jan 2017</font>
+            </li>
+            <br>
+            <li>
+                Anil Shanbhag, Alekh Jindal, Yi Lu, Samuel Madden <br>
+                <a href="papers/p1569-shanbhag.pdf">Amoeba: A Shape changing Storage System for Big Data</a> <br>
+                <font color="brown">VLDB 2016</font>, New Delhi, India. (Demo paper)
+            </li>
+            <br>
+            <li>
+                Zuhair Khayyat, Ihab F. Ilyas, Alekh Jindal, Samuel Madden, Mourad Ouzzani, Paolo Papotti, Jorge-Arnulfo Quiane-Ruiz, Nan Tang, Si Yin <br>
+                <a href="papers/p1215-khayyat.pdf">BigDansing: A System for Big Data Cleansing</a> <br>
+                <font color="brown">SIGMOD 2015</font>, Melbourne, Australia.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Samuel Madden <br>
+                <a href="papers/NEDB15.pdf">Preparing Data For The Data Lake</a> <br>
+                <font color="brown">NEDB 2015</font>, Cambridge, USA. (Short Paper)
+            </li>
+            <br>
+            <li>
+                Alekh Jindal <br>
+                <a href="papers/Robust.pdf">Robust Data Transformations</a> <br>
+                <font color="brown">CIDR 2015</font>, Asilomar, USA. (Abstract)
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Jorge-Arnulfo Quiane-Ruiz, Samuel Madden <br>
+                <a href="papers/AQM13.pdf">Cartilage: Adding Flexibility to the Hadoop Skeleton</a> <br>
+                <font color="brown">SIGMOD 2013</font>, New York, USA. (Demo paper)
+            </li>
+		</ul>
+        
+        
+        
+        <br>
+        <font size="5">Talks and Posters</font>
+        <ul>
+            <li>
+                <a href="slides/alekh-cidr2015.pdf">The Curios Case of Databases and Horses!</a> <br>
+                Presenter: Alekh Jindal<br>
+                CIDR 2015, Asilomar, USA.
+            </li>
+            <br>
+            <li>
+                <a href="posters/cartilage.pdf">Cartilage: Flexible Hadoop Skeleton</a> <br>
+                Presenters: Alekh Jindal, Jorge Quiane-Ruiz<br>
+                SIGMOD 2013, New York, USA.
+            </li>
+            <br>
+        <ul>
+    </td> 
+    </tr> 
+    </tbody></table> 
+ 
+
+ 
+ </body></html>

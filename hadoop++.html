@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
+    <meta http-equiv="Keywords" content="Saarland University,Information Systems Group,database research,Database Systems,Big Data">
+     
+    <meta name="author" content="Alekh Jindal "> 
+    <link rel="stylesheet" type="text/css" href="./files/style.css">
+    <title>Hadoop++ / HAIL</title>
+</head> 
+ 
+ 
+<body>
+    <div class="divHead">
+    <table cellpadding="0" cellspacing="0" width="650">
+      <tbody>
+      <tr>
+        <td valign="center">
+            <a href="https://www.uni-saarland.de"><img src="./files/logo_uds.jpg" alt="UdS" title="Saarland University" height="50" border="0"></a>
+        </td>
+        <td align="left">
+            <a href="http://infosys.uni-saarland.de"><img src="./files/infosys1.jpg" alt="Infosys" title="Information Systems Grouop" height="90" border="0"></a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <hr noshade width="100%" color="#191970">
+ 
+    <table>
+      <tbody><tr> 
+ 
+        <td valign="top" width="750">
+         
+ 
+ 
+        <br>
+        <font size="6">Hadoop++ / HAIL</font><br><br><br>
+        
+        
+        <b>This page describes my contributions to Hadoop++/HAIL. See the detailed webpage at Saarland University <a href="https://infosys.uni-saarland.de/projects/hadoop.php">here</a>.
+            </b><br><br>
+        
+        <p align="justify">
+        Hadoop MapReduce allows non-expert users to run complex analytical tasks over very large data sets on very large clusters and clouds. Hadoop MapReduce, however, suffers from poor performance due to inefficient scan-oriented data processing using a hard-coded query processing pipeline. This is undesirable for several analytical tasks in which users want fast access to their data.
+        </p>
+        
+        <br><br>
+        <img src="files/hadooppp.jpg" class="img img-avatar" alt="Hadoop++" width="400">
+        <br>
+        
+        <p align="justify">
+        The goal of Hadoop++ is to significantly improve the performance of Hadoop MapReduce by integrating database techniques such as data layouts, indexes, and join processing into Hadoop's storage and query processing engines. The challenge is to scale these techniques to very large data sets, preserve the fault-tolerance, and keep the MapReduce interface intact. In Hadoop++, we represent the Hadoop's query processing pipeline as a database-style physical query execution plan and introduce two additional data processing techniques to improve this plan: (i) indexed data access for quickly accessing the relevant portions of a dataset, and (ii) co-partitioned join processing for efficiently combining two or more datasets. As a result, the performance of Hadoop++ is 20x faster than Hadoop and even matches the performance of a well-configured parallel DBMS. <a href="papers/DQJ+10CRv2.pdf">paper</a>
+        </p>
+        
+        
+        <!--<p align="justify">
+        Hadoop++ boosts the performance of Hadoop MapReduce without changing the Hadoop framework at all (Hadoop does not even 'notice it'). To reach this goal, rather than changing a working system (Hadoop), we inject our technology at the right places through UDFs only and affect Hadoop from inside. This has three important consequences: First, Hadoop++ significantly outperforms Hadoop. Second, any future changes of Hadoop may directly be used with Hadoop++ without rewriting any glue code. Third, Hadoop++ does not need to change the Hadoop interface. Our experiments show that Hadoop++ improves over Hadoop by up to a factor of 20 and has comparable or better performance than HadoopDB.
+        </p>-->
+        
+        <br><br>
+        <img src="files/HAIL.jpg" class="img img-avatar" alt="HAIL" width="200">
+        <br>
+        
+        <p align="justify">
+        The Hadoop Aggressive Indexing Library (HAIL), a follow-up of Hadoop++, takes indexing in Hadoop even further. HAIL utilizes idle CPU cycles in the Hadoop MapReduce pipeline to aggressively create as many indexes as possible, each for a different data block replica when uploading data. This has several consequences. First, several indexes are available at query time for incoming MapReduce jobs. As a result, there is a higher likelihood of being able to do an index scan, which is much faster than a full scan. Second, there is no preparation time to create the indexes, as in Hadoop++. Instead, indexes are available as soon as the data is uploaded. Finally, since HAIL integrates index creation tightly with the Hadoop upload pipeline, the overhead of creating the index is negligible in the overall data upload costs. As a result, indexes are created almost for free, in contrast to Hadoop++, which has very high index creation costs. HAIL runs up to 68x faster than Hadoop while having comparable or better (due to binary representation) data upload time. <a href="papers/HAIL.pdf">paper</a>
+        </p>
+        <br>
+        
+        <br>
+        <font size="5">Related Publications</font>
+        <ul>
+            <li>
+                Alekh Jindal, Jorge-Arnulfo Quiane-Ruiz, Jens Dittrich <br>
+                <a href="papers/JQD13.pdf">WWHow! Freeing Data Storage from Cages</a> <br>
+                <font color="brown">CIDR 2013</font>, Asilomar, USA.
+            </li>
+            <br>
+            <li>
+                Jens Dittrich, Jorge-Arnulfo Quiané-Ruiz, Stefan Richter, Stefan Schuh, Alekh Jindal, Jörg Schad <br>
+                <a href="papers/HAIL.pdf">Only Aggressive Elephants are Fast Elephants</a> <br>
+                <font color="brown">VLDB 2012/PVLDB</font>, Istanbul, Turkey.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Jorge-Arnulfo Quiane-Ruiz, Jens Dittrich <br>
+                <a href="papers/JQD11.pdf">Trojan Data Layouts: Right Shoes for a Running Elephant </a><br>
+                <font color="brown">ACM SOCC 2011</font>, Cascais, Portugal.
+            </li>
+            <br>
+            <li>
+                Jens Dittrich, Jorge-Arnulfo Quiane-Ruiz, Alekh Jindal, Yagiz Kargin, Vinay Setty, and Jörg Schad. <br>
+                <a href="papers/DQJ+10CRv2.pdf">Hadoop++: Making a Yellow Elephant Run Like a Cheetah (Without It Even Noticing)</a><br>
+                <font color="brown">VLDB 2010</font>, Singapore.
+            </li>
+		</ul>
+        
+        <br>
+        <font size="5">Talks and Posters</font>
+        <ul>
+            <li>
+                <a href="slides/socc11.pdf">Seven Things to Know When Buying Shoes for an Elephant!</a> <br>
+                Presenter: Alekh Jindal<br>
+                ACM SOCC 2011, Cascais, Portugal.
+            </li>
+            <br>
+            <li>
+                <a href="posters/socc11.pdf">Trojan Data Layouts (Poster)</a> <br>
+                Presenters: Alekh Jindal, Jorge-Arnulfo Quiane-Ruiz<br>
+                ACM SOCC 2011, Cascais, Portugal.
+            </li>
+            <br>
+            <li>
+                <a href="slides/mapreduce.pdf">Large-Scale Data Analysis: Bridging the Gap</a> <br>
+                Presenters: Alekh Jindal, Yagiz Kargin, Sarath Kumar, Vinay Setty<br>
+                Information Systems Lab 2009, Saarbruecken, Germany.
+            </li>
+            <br>
+            <li>
+                <a href="slides/mpi_retreat09.pdf">Map-Reduce: Distributed Computing Made Easy!</a> <br>
+                Presenter: Alekh Jindal<br>
+                MPI Retreat 2009, Braunshausen, Germany.
+            </li>
+        </ul>
+        
+        <br>
+        <font size="5">Patent</font>
+        <ul>
+            <li>
+                Jens Dittrich, Jorge-Arnulfo Quiane-Ruiz, Stefan Richter, Stefan Schuh, Alekh Jindal, Joerg Schad <br>
+                <i>Replicated Data Storage System and Methods.</i><br>
+                <font color="brown">WO Patent WO2013139379</font>
+            </li>
+            <br>
+        </ul>
+
+        <br>
+
+    </td>
+    </tr> 
+    </tbody></table> 
+ 
+
+ 
+ </body></html>

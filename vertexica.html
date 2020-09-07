@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
+    <meta http-equiv="Keywords" content="MIT,MIT CSAIL,MIT database research,Database Systems,Big Data">
+     
+    <meta name="author" content="Alekh Jindal "> 
+    <link rel="stylesheet" type="text/css" href="./files/style.css">
+    <title>Vertexica</title>
+    <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-42416460-1', 'mit.edu');
+            ga('send', 'pageview');
+    </script>
+</head> 
+ 
+ 
+<body>
+    <div class="divHead">
+    <table cellpadding="0" cellspacing="0" width="650">
+      <tbody>
+      <tr>
+        <td valign="center">
+            <a href="http://web.mit.edu/"><img src="./files/mit-redgrey-header3.gif" alt="MIT" title="MIT" height="50" border="0"></a>
+        </td>
+        <td align="left">
+            <a href="http://db.csail.mit.edu/"><img src="./files/header.png" alt="Database Group" title="MIT CSAIL" height="90" border="0"></a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <hr noshade width="100%" color="#993333">
+    
+    <table>
+      <tbody><tr> 
+    
+        <td valign="top" width="750">
+         
+ 
+ 
+        <br>
+        <img src="files/vertexica.png" class="img img-avatar" alt="Vertexica" width="150">
+        <br><br>
+        
+        
+        <p align="justify">
+        End users increasingly want to perform the graph analytics directly with the relational engine, instead of moving data back and forth to a dedicated graph system. Furthermore, there is a need to combine relational analytics (OLAP) with graph analytics for end-to-end graph processing workflows.
+        </p>
+        
+        
+            
+        
+        <p align="justify">
+        The goal of this project is to develop tools and techniques for efficient in-database graph analytics.
+        We started with comparing different systems for graph analysis and our results show that column stores, when properly tuned and when executing carefully written queries, can provide very good performance, competitive to dedicated graph stores.
+        Then, we looked at the ease-of-use of doing graph analytics in relational databases. Given that it is awkward to express graph queries in SQL, we proposed two alternatives: (i) a vertex-centric query interface, which is a popular query language for graph analytics, and (ii) a new language called GRAPHiQL, which hits the middle ground between declarative- and procedural-style languages and allows developers to combine both the table and the graph operations.
+        Finally, we are looking to provide better support for iterations.
+        
+        <!--We developed a technique which loads the graph into main memory and in an optimized data structure. As a result, column stores can process iterative graph queries significantly faster than before and comparable to specialized main-memory graph systems. And fourth, we are working with Intel to look at the end-to-end graph processing workflows of their customers to determine the most suitable tools and techniques for them.-->
+        </p>
+        
+        <br>
+        <font size="5">Publications</font>
+        <ul>
+            <li>
+                Ankur Dave, Alekh Jindal, Li Erran Li, Reynold Xin, Joseph Gonzalez, Matei Zaharia <br>
+                <a href="papers/02-Dave.pdf">GraphFrames: An Integrated API for Mixing Graph and Relational Queries</a> <br>
+                <font color="brown">GRADES 2016</font>, California, USA.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Samuel Madden, Malú Castellanos, Meichun Hsu <br>
+                <a href="papers/PID3922719.pdf">Graph Analytics using Vertica Relational Database</a> <br>
+                <font color="brown">IEEE BigData 2015</font>, Santa Clara, USA.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Samuel Madden, Malu Castellanos, Meichun Hsu<br>
+                <a href="http://arxiv.org/abs/1412.5263v1">Graph Analytics using the Vertica Relational Database</a><br>
+                <font color="brown">arXiv:1412.5263 [cs.DB], Dec 17, 2014</font>.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Samuel Madden <br>
+                <a href="papers/PID3406305.pdf">GraphiQL: A Graph Intuitive Query Language for Relational Databases</a><br>
+                <font color="brown">IEEE BigData 2014</font>, Washington DC, USA. <i>(Acceptance rate: 18.5%)</i>
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Praynaa Rawlani, Eugene Wu, Samuel Madden, Amol Deshpande, Mike Stonebraker <br>
+                <a href="papers/p1669-jindal.pdf">Vertexica: Your Relational Friend for Graph Analytics!</a> <br>
+                <font color="brown">VLDB 2014</font>, Hangzhou, China. (Demo paper)
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Samuel Madden, Amol Deshpande, Mike Stonebraker <br>
+                <a href="papers/NEDB14.pdf">Graph Analytics on Relational Databases</a> <br>
+                <font color="brown">NEDB 2014</font>, Cambridge, USA. (Short paper)
+            </li>
+		</ul>
+        
+        <br>
+        <font size="5">Talks and Blogs</font>
+        <ul>
+            <li>
+                <a href="slides/IEEEBigData2015.pdf">Graph Analytics using Vertica Relational Database</a> <br>
+                Presenter: Alekh Jindal<br>
+                IEEE BigData 2015, Santa Clara, USA.
+            </li>
+            <br>
+            <li>
+                <a href="slides/IEEEBigData.pdf">GraphiQL: A Graph Intuitive Query Language for Relational Databases</a> <br>
+                Presenter: Alekh Jindal<br>
+                IEEE BigData 2014, Washington DC, USA.
+            </li>
+            <br>
+            <li>
+                <a href="slides/NEDB14.pdf">Graph Analytics on Relational Databases</a> <br>
+                Presenter: Alekh Jindal<br>
+                NEDB 2014, Cambridge, USA.
+            </li>
+            <br>
+            <li>
+                <a href="http://istc-bigdata.org/index.php/graph-analytics-the-new-use-case-for-relational-databases">Graph Analytics: The New Use Case for Relational Databases</a> <br>
+                Blogger: Alekh Jindal<br>
+                ISTC for Big Data Blog 2014.
+            </li>
+            <br>
+            <li>
+                <a href="slides/Graphs_on_Databases.pdf">Graphs On Databases</a> <br>
+                Presenter: Alekh Jindal<br>
+                ISTC Annual Meeting 2013, Santa Clara, USA.
+            </li>
+            <br>
+            <li>
+                <a href="http://istc-bigdata.org/index.php/benchmarking-graph-databases">Benchmarking Graph Databases</a> <br>
+                Blogger: Alekh Jindal<br>
+                ISTC for Big Data Blog 2013.
+            </li>
+            <br>
+        </ul>
+        
+    </td> 
+    </tr> 
+    </tbody></table> 
+ 
+
+ 
+ </body></html>

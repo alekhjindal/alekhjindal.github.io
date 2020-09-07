@@ -1,0 +1,177 @@
+
+body {
+	line-height: 1.6em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .85em;
+	font-weight: normal;
+	background: #FFFFFF;
+}
+
+/* ====================================== */
+.divWrapper{
+background-color:#FFFFFF;
+color:#000000;
+margin:0 auto;
+text-align:left;
+
+}
+
+
+/* ====================================== */
+
+.footer{
+clear: both;
+font-size: 85%;
+padding: 20px 10px 10px 10px;
+margin: 0 auto;
+text-align: left;
+color: #000000;
+}
+
+p {
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: normal;
+
+}
+
+li{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: normal;
+
+}
+
+
+td {
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+	font-size: .85em;
+	font-weight: normal;
+
+}
+
+th {
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: bold;
+	text-align: left;
+
+}
+
+.divHead {
+	background-color: #ffffff;
+}
+
+.header {
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 140%;
+text-align: left;
+
+}
+
+.subheader {
+color:#404040;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 120%;
+text-align: left;
+}
+
+/* ====================================== */
+.hidden {
+display:none;
+}
+
+
+/* ===================================== * /
+
+
+
+/* ====================================== */
+
+h1,h2,h3,h4,h5,h6 {
+line-height: 1.5em;
+margin: 10px 0 .25em 0;
+color: #000000;
+}
+/*margin reduces normal whitespace around headlines*/
+
+h1{
+font-size: 140%;
+text-align: center;
+}
+h2{
+font-size: 130%;
+}
+h3{
+font-size: 120%;
+}
+h4{
+font-size: 110%;
+}
+h5,h6 {
+font-size: 105%;
+}
+
+/* ============================= */
+
+hr{
+color: #808080;
+width: 100%;
+height: 3px;
+}
+
+
+/* ====================================== */
+
+/* navigation bar styles */
+table#wrapper td#navcontainer {
+	background-color: #ffffff;
+}
+
+table#navframe {
+	background-color: #00ffff;
+}
+
+
+
+table#navcontainer {
+	background-color: #ffffff;
+}
+
+table#navcontainer td {
+	/* top right bottom left */
+	padding: 0.15em 0 0.15em 0.25em;
+	background-color: #fbfaf4;
+}
+
+table#navcontainer td#navspace {
+	padding: 0 0 0 0;
+	background-color: #CCCCCC;
+}
+table#navcontainer td#navactive {
+	background-color: #CCCCCC;
+}
+
+table#navcontainer td a {
+	text-decoration: none;
+	color: #404040;
+}
+
+table#navcontainer td a:hover {
+	color: #808080;
+	background: transparent;
+	text-decoration: underline;
+}
+
+table#navcontainer td#navactive a:hover {
+	color: #404040;
+	background-color: #CCCCCC;
+	text-decoration: none;
+}

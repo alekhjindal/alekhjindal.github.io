@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
+    <meta http-equiv="Keywords" content="Saarland University,Information Systems Group,database research,Database Systems,Big Data">
+     
+    <meta name="author" content="Alekh Jindal "> 
+    <link rel="stylesheet" type="text/css" href="./files/style.css">
+    <title>OctopusDB</title>    
+</head> 
+ 
+ 
+<body>
+    <div class="divHead">
+    <table cellpadding="0" cellspacing="0" width="650">
+      <tbody>
+      <tr>
+        <td valign="center">
+            <a href="https://www.uni-saarland.de"><img src="./files/logo_uds.jpg" alt="UdS" title="Saarland University" height="50" border="0"></a>
+        </td>
+        <td align="left">
+            <a href="http://infosys.uni-saarland.de"><img src="./files/infosys1.jpg" alt="Infosys" title="Information Systems Grouop" height="90" border="0"></a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <hr noshade width="100%" color="#191970">
+    
+    <table>
+      <tbody><tr> 
+    
+        <td valign="top" width="750">
+         
+ 
+ 
+        <br>
+        <!--<font size="6">OctopusDB</font><br><br>-->
+        <img src="files/octopusdb.png" class="img img-avatar" alt="OctopusDB" width="500">
+        <br><br>
+        
+        <b>This page describes my contributions to OctopusDB. See the detailed webpage at Saarland University <a href="https://infosys.uni-saarland.de/projects/octopusdb.php">here</a>.
+        </b><br><br>
+        
+        <p align="justify">
+        The last decade has seen a proliferation of software systems for storing and managing large collections of data. These different systems are targeted at different types of data, or different data access patterns; examples include: transactional applications, such as banking (OLTP), analytical and reporting applications, such as finding the most popular items that have sold in a retail store (OLAP), as well as systems specialized for streaming (real-time), social networks and other graphs, and data archives. This is a sharp change from just a few decades ago where all applications were supported by monolithic data management systems (e.g., Oracle, or DB2). This proliferation of systems has occurred because it delivers significantly better performance. However, end users now need to pick the right data management system for their query workloads.
+        </p>
+        
+        <p align="justify">
+        Furthermore, modern enterprises typically see a variety of query workloads. For instance, a banking enterprise uses a transactional system for customer banking transactions, an analytical system for business intelligence, a streaming system for stock trading, and an archival system to meet regulatory requirements for data retention. As a consequence, today's companies have to manage and integrate several types of data management systems, which is tedious, expensive, and counter-productive for their business.
+        </p>
+        
+        <p align="justify">
+        Our vision is a highly flexible data managing system, which automatically sets the initial configuration and adapts to changing workload later on, with improved performance, lowered cost and better maintainability. This vision for a new system, coined OctopusDB, initially stores a log or journal of data operations. Thereafter, depending on the workload, OctopusDB creates arbitrary physical representations, called Storage Views, of that journal. As a result of this flexible data storage layer, OctopusDB can mimic a variety of systems and efficiently support dynamic query workloads.
+        
+        </p>
+        
+        <br>
+        <font size="5">Publications</font>
+        <ul>
+            <li>
+                Felix Martin Schuhknecht, Alekh Jindal, Jens Dittrich <br>
+                <a href="http://www.springer.com/-/7/AU-QKUoaAgfPWjhrnFKB">An Experimental Evaluation and Analysis of Database Cracking</a> <br>
+                <font color="brown">The VLDB Journal, August 2015</font> <br>
+                <b><font color="#009933">Special Issue on best papers of VLDB 2014</font></b>
+            </li>
+            <br>
+            <li>
+                Felix Martin Schuhknecht, Alekh Jindal, Jens Dittrich <br>
+                <a href="papers/p97-schuhknecht.pdf">The Uncracked Pieces in Database Cracking</a> <br>
+                <font color="brown">VLDB 2014/PVLDB</font>, Hangzhou, China. [<a href="https://infosys.uni-saarland.de/publications/uncracked_pieces_sourcecode.zip">Source Code</a>] <br>
+                <b><a href="files/VLDB_Award.JPG"><font color="#009933">Best Paper Award</font></a></b>
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Endre Palatinus, Vladimir Pavlov, Jens Dittrich <br>
+                <a href="papers/JPPD13.pdf">A Comparison of Knives for Bread Slicing</a> <br>
+                <font color="brown">VLDB 2013/PVLDB</font>, Riva, Italy.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Jorge-Arnulfo Quiane-Ruiz, Jens Dittrich <br>
+                <a href="papers/JQD13.pdf">WWHow! Freeing Data Storage from Cages</a> <br>
+                <font color="brown">CIDR 2013</font>, Asilomar, USA.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Felix Martin Schuhknecht, Jens Dittrich, Karen Khachatryan, Alexander Bunte <br>
+                <a href="papers/JSD+13.pdf">How Achaeans Would Construct Columns in Troy</a> <br>
+                <font color="brown">CIDR 2013</font>, Asilomar, USA.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Jorge-Arnulfo Quiane-Ruiz, Jens Dittrich <br>
+                <a href="papers/JQD11.pdf">Trojan Data Layouts: Right Shoes for a Running Elephant </a><br>
+                <font color="brown">ACM SOCC 2011</font>, Cascais, Portugal.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Jens Dittrich <br>
+                <a href="papers/JD11.pdf">Relax and Let the Database do the Partitioning Online</a> <br>
+                <font color="brown">VLDB BIRTE 2011</font>, Seattle, USA. <a href="papers/TRAutoStore.pdf">TR</a>
+            </li>
+            <br>
+            <li>
+                Jens Dittrich, Alekh Jindal <br>
+                <a href="papers/DJ11.pdf">Towards a one-size-fits-all Database Architecture</a><br>
+                <font color="brown">CIDR 2011</font>, Outrageous Ideas and Vision Track, Asilomar, USA.<br>
+                <b><a href="files/CIDR_Award.JPG"><font color="#009933">Best Outrageous Ideas and Vision Paper Award</font></a> (<a href="http://www.cccblog.org/2011/01/18/outrageous-ideas-at-cidr-seeking-to-stimulate-innovative-research-directions/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+cccblog%2FwDnv+%28CCC+Blog%29">CCC Blog</a>)</b>
+            </li>            
+            <br>
+            <li>
+                Alekh Jindal<br>
+                <a href="papers/Jin10.pdf">The Mimicking Octopus: Towards a one-size-fits-all Database Architecture</a><br>
+                <font color="brown">VLDB 2010 PhD Workshop</font>, Singapore.
+            </li>
+		</ul>
+        
+        <br>
+        <font size="5">Talks and Posters</font>
+        <ul>
+            <li>
+                <a href="slides/research_summary.pdf">Research Summary</a> <br>
+                Presenter: Alekh Jindal<br>
+                Database Group Meeting 2013, MIT, USA.
+            </li>
+            <br>
+            <li>
+                <a href="slides/trojanColumns.pdf">How Achaeans Would Construct Columns in Troy</a> <br>
+                Presenter: Jens Dittrich, Slides: Alekh Jindal<br>
+                CIDR 2013, Asilomar, USA.
+            </li>
+            <br>
+            <li>
+                <a href="slides/defense.pdf">OctopusDB: Flexible and Scalable Storage Management for Arbitrary Database Engines</a> <br>
+                Presenter: Alekh Jindal<br>
+                PhD Defense 2012, Saarbruecken, Germany.
+            </li>
+            <br>
+            <li>
+                <a href="slides/autostore.pdf">Relax and Let the Database do the Partitioning Online</a> <br>
+                Presenter: Stefan Schuh, Slides: Alekh Jindal<br>
+                VLDB BIRTE 2011, Seattle, USA.
+            </li>
+            <br>
+            <li>
+                <a href="posters/mmci-poster.pdf">A Database System for Managing Multimodal Data (Poster)</a> <br>
+                Presenter: Alekh Jindal<br>
+                MMCI Annual Meeting 2010, Saarbruecken, Germany.
+            </li>
+            <br>
+            <li>
+                <a href="slides/VLDB2010_workshop.pdf">The Mimicking Octopus: Towards a one-size-fits-all Database Architecture</a> <br>
+                Presenter: Alekh Jindal<br>
+                VLDB PhD Workshop 2010, Singapore.
+            </li>
+            <br>
+            <li>
+                <a href="slides/QE2010.pdf">OctopusDB: Towards a one-size-fits-all Database Architecture</a> <br>
+                Presenter: Alekh Jindal<br>
+                Qualifying Examination 2010, Saarbruecken, Germany.
+            </li>
+        </ul>
+        
+        <br>
+        <font size="5">Patent</font>
+        <ul>
+            <li>
+                Jens Dittrich, Alekh Jindal<br>
+                <i>A method for storing and accessing data in a database system.</i><br>
+                <font color="brown">US Patent US20130226959 A1</font>
+            </li>
+            <br>
+        </ul>
+        
+        <br>
+    </td> 
+    </tr> 
+    </tbody></table> 
+ 
+
+ 
+ </body></html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
+    <meta http-equiv="Keywords" content="Microsoft,Microsoft CISL,Microsoft Reserach,database research,Database Systems,Big Data">
+     
+    <meta name="author" content="Alekh Jindal "> 
+    <link rel="stylesheet" type="text/css" href="./files/style.css">
+    <title>Learning Optimizer</title>
+</head> 
+ 
+ 
+<body>
+    <div class="divHead">
+    <table cellpadding="0" cellspacing="0" width="650">
+      <tbody>
+      <tr>
+        <td valign="center">
+            <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0" max-age=3600></a>
+        </td>
+        
+      </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <hr noshade width="100%" color="#993333">
+    
+    <table>
+      <tbody><tr> 
+    
+        <td valign="top" width="750">
+         
+ 
+ 
+        <br>
+        <img src="files/learningOptimizer.png" class="img img-avatar" alt="LearningOptimizer" width="400">
+        
+        <p align="justify">
+		We are witnessing the rise of declarative big data systems. Examples include Hive, Spark, and Flink in the open source, and BigQuery, BigSQL, and SCOPE among proprietary systems. These systems take the declarative user queries as input and use a (typically cost based) query optimizer to pick the physical execution plans for that input. While query optimization has been a pain even in traditional databases, big data systems make the problem harder due to: (i) massive volumes of data which are very expensive to analyze and collect statistics on,  (ii) presence of unstructured data that have schema imposed at runtime and hence cannot be analyzed a priori, and (iii) pervasive use of custom user code (e.g., UDFs) that embed arbitrary application logic resulting in arbitrary performance characteristics.      
+        </p>
+        
+        <p align="justify">
+        We are also witnessing the popularity of cloud infrastructures with managed data services, that put the onus of tuning the services on the cloud provider. Fortunately, the scale of these cloud services provide the unique opportunity of observing and analyzing massive query workloads that could be harnessed for continuously improving the performance of these services. The goal of this project is to leverage such cloud workloads for training machine learning models and providing feedback to the query optimizer for future optimizations.
+        </p>
+        
+        
+        <br>
+        <font size="5">Publications</font>
+        <ul>
+            <li>
+                Tarique Siddiqui, Alekh Jindal, Shi Qiao, Hiren Patel, Wangchao Le<br>
+                <a href="papers/learnedCostsSIGMOD20.pdf">Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings</a> <br>
+                <font color="brown">SIGMOD 2020</font>, Portland, USA.
+            </li>
+            <br>                        
+            <li>
+                H M Sajjad Hossain, Lucas Rosenblatt, Gilbert Antonius, Irene Shaffer, Remmelt Ammerlaan, Abhishek Roy, Markus Weimer, Hiren Patel, Marc Friedman, Shi Qiao, Peter Orenberg, Soundarajan Srinivasan, Vijay Ramani, Alekh Jindal<br>
+                <a href="papers/perfguard.pdf">PerfGuard: Deploying ML-for-Systems without Performance Regressions</a> <br>
+                <font color="brown">MLOps Systems 2020</font>, Austin, USA.
+            </li>
+            <br>                        
+            <li>
+                Chenggang Wu, Alekh Jindal, Saeed Amizadeh, Hiren Patel, Wangchao Le, Shi Qiao, Sriram Rao<br>
+                <a href="http://www.vldb.org/pvldb/vol12/p210-wu.pdf">Towards a Learning Optimizer for Shared Clouds</a> <br>
+                <font color="brown">VLDB 2019/PVLDB</font>, Los Angeles, USA.
+            </li>
+            <br>
+            <li>
+                Alekh Jindal, Lalitha Viswanathan, Konstantinos Karanasos <br>
+                <a href="https://arxiv.org/pdf/1906.06590">Query and Resource Optimizations: A Case for Breaking the Wall in Big Data Systems</a> <br>
+                <font color="brown">arXiv:1906.06590 [cs.DB], June 2019</font>
+            </li>
+            <br>
+            <li>
+                Lalitha Viswanathan, Alekh Jindal, Konstantinos Karanasos<br>
+                <a href="papers/QueryAndResourceOpt.pdf">Query and Resource Optimization: Bridging the Gap</a> <br>
+                <font color="brown">ICDE 2018</font>, Paris, France (Short paper).
+            </li>
+		</ul>
+        
+        
+        
+        <br>
+        <!--<font size="5">Talks and Posters</font>
+        <ul>
+        </ul>-->
+
+        <br>
+        <font size="5">Talks</font>
+        <ul>
+            <li>
+                <i>Building a Learning Optimizer at Microsoft</i> <br>                
+                Presenter: Alekh Jindal<br>
+                MIT, Cambridge, USA.
+            </li>
+            <br>
+            <li>
+                <i>Building a Learning Optimizer at Microsoft</i> <br>                
+                Presenter: Alekh Jindal<br>
+                University of Wisconsin, Madison, USA.
+            </li>
+            <br>
+            <li>
+                <a href="slides/NwDB_Annual_2019.pdf">Towards a Learning Optimizer for Shared Clouds</a> <br>                
+                Presenter: Alekh Jindal<br>
+                North West Database Society 2019, Redmond, USA.<br>
+                <a href="https://youtu.be/3Q5HcituSfo?t=888">YouTube Video</a>
+            </li>
+        </ul>
+        <br>
+
+        <font size="5">Patent</font>
+        <ul>
+            <li>
+                A Jindal, H Patel, S Amizadeh, C Wu<br>
+                <i>Learning Optimizer for Shared Cloud</i><br>
+                <font color="brown">US Patent App. 16/003,227</font>
+            </li>
+        </ul>
+
+    </td> 
+    </tr> 
+    </tbody></table> 
+ 
+
+ 
+ </body></html>
