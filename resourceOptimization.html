@@ -1,114 +1,89 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
-    <meta http-equiv="Keywords" content="Microsoft,Microsoft GSL,Microsoft Research,database research,Database Systems,Big Data">
-     
-    <meta name="author" content="Alekh Jindal "> 
-    <link rel="stylesheet" type="text/css" href="./files/style.css">
-    <title>Resource Optimization</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Microsoft,Microsoft GSL,Microsoft Research,database research,Database Systems,Big Data">
+<meta name="author" content="Alekh Jindal">
+<link rel="stylesheet" href="./files/style.css">
+<title>Resource Optimization</title>
 </head> 
  
  
 <body>
-    <div class="divHead">
-    <table cellpadding="0" cellspacing="0" width="650">
-      <tbody>
-      <tr>
-        <td valign="center">
-            <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0" max-age=3600></a>
-        </td>
-        
-      </tr>
-      </tbody>
-    </table>
-    </div>
-
-    <hr noshade width="100%" color="#993333">
+    <nav class="topnav"><a href="index.html">&larr; Alekh Jindal</a></nav>
+<header class="brand">
+  <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0"></a>
+</header>
     
-    <table>
-      <tbody><tr> 
-    
-        <td valign="top" width="750">
-         
- 
- 
-        <br>
-
-        <br>
-        <img src="files/resource_opt.jpg" class="img img-avatar" alt="Resource Optimization" width="400">
-        
-        <p align="justify">
+    <main class="content">
+        <div class="intro">
+          <div class="intro__media">
+            <img src="files/resource_opt.jpg" alt="Resource Optimization">
+          </div>
+          <div class="intro__text">
+        <p>
 		The last decade has witnessed a tremendous interest in large scale data processing, and consequently the rise of so called big data systems. Apart from handling the scale and complexity of big data, it is also critical to improve the resource efficiency and reduce operational costs in these systems. Interestingly, resource efficiency becomes an even harder problem with the new breed of so called <i>serverless query processing</i>, where users do not have to setup clusters. Instead, the cloud provider takes care of allocating resources on a per-query basis. However, this is very challenging because the relationship between the resources provided and the performance observed for a query is often non-intuitive and even domain experts would struggle to manually pick the right set of resources for a given query.
 		</p>
 
-		<p align="justify">
-		The goal of this project is to develop tools and techniques that can help optimize resources in modern cloud query engines.  
+		<p>
+		The goal of this project is to develop tools and techniques that can help optimize resources in modern cloud query engines.
 		</p>
-        
-        <br><br>
-        <font size="5">Publications</font>
+          </div>
+        </div>
+
+        <h2>Publications</h2>
         <ul>
             <li>
                 Rathijit Sen, Abhishek Roy, Alekh Jindal<br>
                 <a href="https://openproceedings.org/2023/conf/edbt/paper-186.pdf">Predictive Price-Performance Optimization for Serverless Query Processing</a><br>
-                <font color="brown">EDBT 2023</font>, Ioannina, Greece.
+                <span class="venue">EDBT 2023</span>, Ioannina, Greece.
         	</li>
-            <br>
             <li>
                 Anish Pimpley, Shuo Li, Rathijit Sen, Soundararajan Srinivasan, Alekh Jindal<br>
                 <a href="https://openproceedings.org/2022/conf/edbt/paper-78.pdf">Towards Optimal Resource Allocation for Serverless Queries</a> <br>
-                <font color="brown">EDBT 2022</font>, Edinburgh, UK.
+                <span class="venue">EDBT 2022</span>, Edinburgh, UK.
         	</li>
-        	<br>
             <li>
                 Anish Pimpley, Shuo Li, Anubha Srivastava, Vishal Rohra, Yi Zhu, Soundararajan Srinivasan, Alekh Jindal, Hiren Patel, Shi Qiao, Rathijit Sen<br>
                 <a href="https://arxiv.org/pdf/2107.08594.pdf">Optimal Resource Allocation for Serverless Queries</a><br>
-                <font color="brown">arXiv:2107.08594 [cs.DB], July 2021</font>
+                <span class="venue">arXiv:2107.08594 [cs.DB], July 2021</span>
             </li>
-            <br>
             <li>
                 Rathijit Sen, Abhishek Roy, Alekh Jindal, Rui Fang, Jeff Zheng, Xiaolei Liu, Ruiping Li<br>
                 <a href="http://vldb.org/pvldb/vol14/p2855-sen.pdf">AutoExecutor: Predictive Parallelism for Spark SQL Queries</a> <br>
-                <font color="brown">VLDB 2021 (Demo)</font>
+                <span class="venue">VLDB 2021 (Demo)</span>
             </li>
-            <br>
             <li>
         		Rathijit Sen, Alekh Jindal, Hiren Patel, Shi Qiao<br>
                 <a href="http://www.vldb.org/pvldb/vol13/p3326-sen.pdf">AutoToken: Predicting Peak Parallelism for Big Data Analytics at Microsoft</a> <br>
-                <font color="brown">VLDB 2020</font>, Tokyo, Japan.
+                <span class="venue">VLDB 2020</span>, Tokyo, Japan.
             </li>
-            <br>
             <li>
         		Malay Bag, Alekh Jindal, Hiren Patel<br>
                 <a href="https://www.usenix.org/system/files/hotcloud20_paper_bag.pdf">Towards Plan-aware Resource Allocation in Serverless Query Processing</a> <br>
-                <font color="brown">HotCloud 2020</font>, Boston, USA.
+                <span class="venue">HotCloud 2020</span>, Boston, USA.
             </li>
-            <br>        	
         	<li>
                 Alekh Jindal, Lalitha Viswanathan, Konstantinos Karanasos <br>
                 <a href="https://arxiv.org/pdf/1906.06590">Query and Resource Optimizations: A Case for Breaking the Wall in Big Data Systems</a> <br>
-                <font color="brown">arXiv:1906.06590 [cs.DB], June 2019</font>
+                <span class="venue">arXiv:1906.06590 [cs.DB], June 2019</span>
             </li>
-            <br>
         	<li>
                 Lalitha Viswanathan, Alekh Jindal, Konstantinos Karanasos<br>
                 <a href="papers/QueryAndResourceOpt.pdf">Query and Resource Optimization: Bridging the Gap</a> <br>
-                <font color="brown">ICDE 2018</font>, Paris, France (Short paper).
+                <span class="venue">ICDE 2018</span>, Paris, France (Short paper).
             </li>
-            <br>           
 		</ul>
         
         
         
-        <br>
-        <!--<font size="5">Talks and Posters</font>
+        <!--<h2>Talks and Posters</h2>
         <ul>
         </ul>-->
 
-        <br>
 
-    </td> 
-    </tr> 
-    </tbody></table> 
+    </main> 
  
 
  

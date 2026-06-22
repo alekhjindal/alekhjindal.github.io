@@ -1,125 +1,106 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
-    <meta http-equiv="Keywords" content="Microsoft,Microsoft CISL,Microsoft Reserach,database research,Database Systems,Big Data">
-     
-    <meta name="author" content="Alekh Jindal "> 
-    <link rel="stylesheet" type="text/css" href="./files/style.css">
-    <title>Learning Optimizer</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Microsoft,Microsoft CISL,Microsoft Reserach,database research,Database Systems,Big Data">
+<meta name="author" content="Alekh Jindal">
+<link rel="stylesheet" href="./files/style.css">
+<title>Learning Optimizer</title>
 </head> 
  
  
 <body>
-    <div class="divHead">
-    <table cellpadding="0" cellspacing="0" width="650">
-      <tbody>
-      <tr>
-        <td valign="center">
-            <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0" max-age=3600></a>
-        </td>
-        
-      </tr>
-      </tbody>
-    </table>
-    </div>
-
-    <hr noshade width="100%" color="#993333">
+    <nav class="topnav"><a href="index.html">&larr; Alekh Jindal</a></nav>
+<header class="brand">
+  <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0"></a>
+</header>
     
-    <table>
-      <tbody><tr> 
-    
-        <td valign="top" width="750">
-         
- 
- 
-        <br>
-        <img src="files/learningOptimizer.png" class="img img-avatar" alt="LearningOptimizer" width="400">
-        
-        <p align="justify">
+    <main class="content">
+        <div class="intro">
+          <div class="intro__media">
+            <img src="files/learningOptimizer.png" alt="Learning Optimizer">
+          </div>
+          <div class="intro__text">
+        <p>
 		We are witnessing the rise of declarative big data systems. Examples include Hive, Spark, and Flink in the open source, and BigQuery, BigSQL, and SCOPE among proprietary systems. These systems take the declarative user queries as input and use a (typically cost based) query optimizer to pick the physical execution plans for that input. While query optimization has been a pain even in traditional databases, big data systems make the problem harder due to: (i) massive volumes of data which are very expensive to analyze and collect statistics on,  (ii) presence of unstructured data that have schema imposed at runtime and hence cannot be analyzed a priori, and (iii) pervasive use of custom user code (e.g., UDFs) that embed arbitrary application logic resulting in arbitrary performance characteristics.      
         </p>
         
-        <p align="justify">
+        <p>
         We are also witnessing the popularity of cloud infrastructures with managed data services, that put the onus of tuning the services on the cloud provider. Fortunately, the scale of these cloud services provide the unique opportunity of observing and analyzing massive query workloads that could be harnessed for continuously improving the performance of these services. The goal of this project is to leverage such cloud workloads for training machine learning models and providing feedback to the query optimizer for future optimizations.
         </p>
-        
-        
-        <br>
-        <font size="5">Publications</font>
+          </div>
+        </div>
+
+        <h2>Publications</h2>
         <ul>
             <li>
                 Alekh Jindal, Jyoti Leeka<br>
                 <a href="https://sigmodrecord.org/publications/sigmodRecord/2209/pdfs/10_Industry_JIndal.pdf">Query Optimizer as a Service: An Idea Whose Time Has Come</a><br>
-                <font color="brown">SIGMOD Record, September 2022</font>
+                <span class="venue">SIGMOD Record, September 2022</span>
         	</li>
-        	<br>
             <li>
                 Wangda Zhang, Matteo Interlandi, Paul Mineiro, Shi Qiao, Nasim Ghazanfari, Karlen Lie, Marc Friedman, Rafah Hosn, Hiren Patel, Alekh Jindal<br>
                 <b>Deploying a Steered Query Optimizer in Production at Microsoft</b> (to appear)<br>
-                <font color="brown">SIGMOD 2022 (Industry)</font>, Philadelphia, USA.
+                <span class="venue">SIGMOD 2022 (Industry)</span>, Philadelphia, USA.
         	</li>
-        	<br>
             <li>
                 Remmelt Ammerlaan, Gilbert Antonius, Marc Friedman, H M Sajjad Hossain, Alekh Jindal, Peter Orenberg, Hiren Patel, Shi Qiao, Vijay Ramani, Lucas Rosenblatt, Abhishek Roy, Irene Shaffer, Soundarajan Srinivasan, Markus Weimer<br>
                 <a href="https://vldb.org/pvldb/vol14/p3362-hossain.pdf">PerfGuard: Deploying ML-for-Systems without Performance Regressions, Almost!</a> <br>
-                <font color="brown">VLDB 2022</font>, Sydney, Australia.
+                <span class="venue">VLDB 2022</span>, Sydney, Australia.
             </li>
-            <br>
             <li>
                 Parimarjan Negi, Matteo Interlandi, Ryan Marcus, Mohammad Alizadeh, Tim Kraska, Marc Friedman, Alekh Jindal<br>
                 <a href="https://dl.acm.org/doi/pdf/10.1145/3448016.3457568">Steering Query Optimizers: A Practical Take on Big Data Workloads</a> <br>
-                <font color="brown">SIGMOD 2021 (Industry)</font><br>
-                <b><a href="files/SIGMOD_Award.pdf"><font color="#009933">Industry Honorable Mention</font></a> (<a href="https://2021.sigmod.org/sigmod_best_papers.shtml">SIGMOD Announcement</a>)</b>
+                <span class="venue">SIGMOD 2021 (Industry)</span><br>
+                <b><a href="files/SIGMOD_Award.pdf"><span class="award">Industry Honorable Mention</span></a> (<a href="https://2021.sigmod.org/sigmod_best_papers.shtml">SIGMOD Announcement</a>)</b>
             </li>
-            <br>
             <li>
                 Alekh Jindal, Shi Qiao, Rathijit Sen, Hiren Patel<br>
                 <a href="papers/icde21.pdf">Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft</a> <br>
-                <font color="brown">ICDE 2021</font> (Industry)
+                <span class="venue">ICDE 2021</span> (Industry)
             </li>
-            <br>
             <li>
                 Tarique Siddiqui, Alekh Jindal, Shi Qiao, Hiren Patel, Wangchao Le<br>
                 <a href="papers/learnedCostsSIGMOD20.pdf">Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings</a> <br>
-                <font color="brown">SIGMOD 2020</font>, Portland, USA.
+                <span class="venue">SIGMOD 2020</span>, Portland, USA.
             </li>
-            <br>                        
             <li>
                 H M Sajjad Hossain, Lucas Rosenblatt, Gilbert Antonius, Irene Shaffer, Remmelt Ammerlaan, Abhishek Roy, Markus Weimer, Hiren Patel, Marc Friedman, Shi Qiao, Peter Orenberg, Soundarajan Srinivasan, Vijay Ramani, Alekh Jindal<br>
                 <a href="papers/perfguard.pdf">PerfGuard: Deploying ML-for-Systems without Performance Regressions</a> <br>
-                <font color="brown">MLOps Systems 2020</font>, Austin, USA.
+                <span class="venue">MLOps Systems 2020</span>, Austin, USA.
             </li>
-            <br>                        
             <li>
                 Chenggang Wu, Alekh Jindal, Saeed Amizadeh, Hiren Patel, Wangchao Le, Shi Qiao, Sriram Rao<br>
                 <a href="http://www.vldb.org/pvldb/vol12/p210-wu.pdf">Towards a Learning Optimizer for Shared Clouds</a> <br>
-                <font color="brown">VLDB 2019/PVLDB</font>, Los Angeles, USA.
+                <span class="venue">VLDB 2019/PVLDB</span>, Los Angeles, USA.
             </li>
-            <br>
             <li>
                 Alekh Jindal, Lalitha Viswanathan, Konstantinos Karanasos <br>
                 <a href="https://arxiv.org/pdf/1906.06590">Query and Resource Optimizations: A Case for Breaking the Wall in Big Data Systems</a> <br>
-                <font color="brown">arXiv:1906.06590 [cs.DB], June 2019</font>
+                <span class="venue">arXiv:1906.06590 [cs.DB], June 2019</span>
             </li>
-            <br>
             <li>
                 Lalitha Viswanathan, Alekh Jindal, Konstantinos Karanasos<br>
                 <a href="papers/QueryAndResourceOpt.pdf">Query and Resource Optimization: Bridging the Gap</a> <br>
-                <font color="brown">ICDE 2018</font>, Paris, France (Short paper).
+                <span class="venue">ICDE 2018</span>, Paris, France (Short paper).
             </li>
 		</ul>
-        
-        
-        
-        <br>
-        <!--<font size="5">Talks and Posters</font>
+
+        <h2>Patent</h2>
+        <ul>
+            <li>
+                Matteo Interlandi, Wangda Zhang, Paul Mineiro, Marc Friedman, Alekh Jindal, Hiren Patel, Rafah Hosn, Shi Qiao<br>
+                <i><a href="https://patents.google.com/patent/US20230177053A1/en">Query optimizer advisor.</a></i><br>
+                <span class="venue">US Patent App. US20230177053A1</span>
+            </li>
+        </ul>
+
+        <!--<h2>Talks and Posters</h2>
         <ul>
         </ul>-->
 
-        
-
-    </td> 
-    </tr> 
-    </tbody></table> 
+    </main>
  
 
  

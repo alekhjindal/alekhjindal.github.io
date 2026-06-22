@@ -1,49 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
-    <meta http-equiv="Keywords" content="Microsoft,Microsoft CISL,Microsoft Reserach,database research,Database Systems,Big Data">
-     
-    <meta name="author" content="Alekh Jindal "> 
-    <link rel="stylesheet" type="text/css" href="./files/style.css">
-    <title>Peregrine</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Microsoft,Microsoft CISL,Microsoft Reserach,database research,Database Systems,Big Data">
+<meta name="author" content="Alekh Jindal">
+<link rel="stylesheet" href="./files/style.css">
+<title>Peregrine</title>
 </head> 
  
  
 <body>
-    <div class="divHead">
-    <table cellpadding="0" cellspacing="0" width="650">
-      <tbody>
-      <tr>
-        <td valign="center">
-            <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0" max-age=3600></a>
-        </td>
-        
-      </tr>
-      </tbody>
-    </table>
-    </div>
-
-    <hr noshade width="100%" color="#993333">
+    <nav class="topnav"><a href="index.html">&larr; Alekh Jindal</a></nav>
+<header class="brand">
+  <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0"></a>
+</header>
     
-    <table>
-      <tbody><tr> 
-    
-        <td valign="top" width="750">
-         
- 
- 
-        <br>
-
-
-        <table id="wrapper" border="0" cellpadding="0" cellspacing="0" width="780">
-          <tbody>
-          <tr>
-          <td valign="top"></td>
-          <td>
-            <img src="files/peregrine.png" class="img img-avatar" alt="Peregrine" width="185">
-          </td>
-          <td align="left" width="550">
-            <font size="5">Peregrine</font><br>
-            <p align="justify">
+    <main class="content">
+        <h1 class="page-title">Peregrine</h1>
+        <div class="intro">
+          <div class="intro__media">
+            <img src="files/peregrine.png" alt="Peregrine">
+          </div>
+          <div class="intro__text">
+            <p>
                 Database administrators (DBAs) were traditionally responsible
                 for optimizing the on-premise database workloads.
                 However, with the rise of cloud data services where
@@ -60,7 +40,7 @@
                 the system developers are now tasked with supporting a
                 large base of cloud users.
             </p>
-            <p align="justify">
+            <p>
               Peregrine is a workload optimization platform
                 for cloud query engines that we have been developing
                 for the big data analytics infrastructure at Microsoft.
@@ -73,241 +53,199 @@
                 possible in each category, and (iii) a prescription for
                 adding workload-awareness to a query engine, via the notion
                 of query annotations that are served to the query engine
-                at compile time.      
+                at compile time.
             </p>
+          </div>
+        </div>
 
-          </td>
-          <td width="20"></td>
-          
-           
-          </tr> 
-          </tbody> 
-        </table>
-
-        
-        <br><br>
-        <font size="5">Topics</font>
+        <h2>Topics</h2>
         <ul>
             <li>
                 <a href="cloudviews.html">CloudViews</a> for multi-query optimization in cloud query engines.
             </li>
-            <br>
             <li>
                 <a href="learningOptimizer.html">Learning optimizer</a> for improving the components of a cloud query optimizer.
             </li>
-            <br>
             <li>
                 <a href="resourceOptimization.html">Resource optimization</a> for reducing the cloud resource consumption.
             </li>
         </ul>
 
 
-        <br><br>
-        <font size="5">Publications</font>
+        <h2>Publications</h2>
         <ul>
             <li>
                 Rathijit Sen, Abhishek Roy, Alekh Jindal<br>
                 <a href="https://openproceedings.org/2023/conf/edbt/paper-186.pdf">Predictive Price-Performance Optimization for Serverless Query Processing</a><br>
-                <font color="brown">EDBT 2023</font>, Ioannina, Greece.
+                <span class="venue">EDBT 2023</span>, Ioannina, Greece.
         	</li>
-        	<br>
             <li>
                 Alekh Jindal, Jyoti Leeka<br>
                 <a href="https://sigmodrecord.org/publications/sigmodRecord/2209/pdfs/10_Industry_JIndal.pdf">Query Optimizer as a Service: An Idea Whose Time Has Come</a><br>
-                <font color="brown">SIGMOD Record, September 2022</font>
+                <span class="venue">SIGMOD Record, September 2022</span>
         	</li>
-        	<br>
             <li>
                 Sunny Gakhar, Joyce Cahoon, Wangchao Le, Xiangnan Li, Kaushik Ravichandran, Hiren Patel, Marc Friedman, Brandon Haynes, Shi Qiao, Alekh Jindal, Jyoti Leeka<br>
                 <a href="https://www.vldb.org/pvldb/vol15/p3710-leeka.pdf">Pipemizer: An Optimizer for Analytics Data Pipelines</a><br>
-                <font color="brown">VLDB 2022</font>, Sydney, Australia. (Demo paper)
+                <span class="venue">VLDB 2022</span>, Sydney, Australia. (Demo paper)
         	</li>
-        	<br>
             <li>
                 Wangda Zhang, Matteo Interlandi, Paul Mineiro, Shi Qiao, Nasim Ghazanfari, Karlen Lie, Marc Friedman, Rafah Hosn, Hiren Patel, Alekh Jindal<br>
                 <a href="https://dl.acm.org/doi/abs/10.1145/3514221.3526052">Deploying a Steered Query Optimizer in Production at Microsoft</a><br>
-                <font color="brown">SIGMOD 2022 (Industry)</font>, Philadelphia, USA.
+                <span class="venue">SIGMOD 2022 (Industry)</span>, Philadelphia, USA.
         	</li>
-        	<br>
             <li>
                 Anish Pimpley, Shuo Li, Rathijit Sen, Soundararajan Srinivasan, Alekh Jindal<br>
                 <a href="https://openproceedings.org/2022/conf/edbt/paper-78.pdf">Towards Optimal Resource Allocation for Serverless Queries</a> <br>
-                <font color="brown">EDBT 2022</font>, Edinburgh, UK.
+                <span class="venue">EDBT 2022</span>, Edinburgh, UK.
         	</li>
-        	<br>
             <li>
         		Rathijit Sen, Abhishek Roy, Alekh Jindal<br>
                 <a href="https://arxiv.org/pdf/2112.08572.pdf">Predictive Price-Performance Optimization for Serverless Query Processing</a><br>
-                <font color="brown">arXiv:2112.08572 [cs.DB], Dec 2021</font>
+                <span class="venue">arXiv:2112.08572 [cs.DB], Dec 2021</span>
         	</li>
-        	<br>
             <li>
                 Remmelt Ammerlaan, Gilbert Antonius, Marc Friedman, H M Sajjad Hossain, Alekh Jindal, Peter Orenberg, Hiren Patel, Shi Qiao, Vijay Ramani, Lucas Rosenblatt, Abhishek Roy, Irene Shaffer, Soundarajan Srinivasan, Markus Weimer<br>
                 <a href="https://vldb.org/pvldb/vol14/p3362-hossain.pdf">PerfGuard: Deploying ML-for-Systems without Performance Regressions, Almost!</a> <br>
-                <font color="brown">VLDB 2022</font>, Sydney, Australia.
+                <span class="venue">VLDB 2022</span>, Sydney, Australia.
             </li>
-            <br>
             <li>
                 Anish Pimpley, Shuo Li, Anubha Srivastava, Vishal Rohra, Yi Zhu, Soundararajan Srinivasan, Alekh Jindal, Hiren Patel, Shi Qiao, Rathijit Sen<br>
                 <a href="https://arxiv.org/pdf/2107.08594.pdf">Optimal Resource Allocation for Serverless Queries</a><br>
-                <font color="brown">arXiv:2107.08594 [cs.DB], July 2021</font>
+                <span class="venue">arXiv:2107.08594 [cs.DB], July 2021</span>
             </li>
-            <br>
             <li>
                 Yiwen Zhu, Matteo Interlandi, Abhishek Roy, Krishnadhan Das, Hiren Patel, Malay Bag, Hitesh Sharma, Alekh Jindal<br>
                 <a href="http://vldb.org/pvldb/vol14/p2505-zhu.pdf">Phoebe: A Learning-based Checkpoint Optimizer</a> <br>
-                <font color="brown">VLDB 2021</font>
+                <span class="venue">VLDB 2021</span>
             </li>
-            <br>
             <li>
                 Alekh Jindal, Matteo Interlandi<br>
                 <a href="http://vldb.org/pvldb/vol14/p3202-jindal.pdf">Machine Learning for Cloud Data Systems: the Promise, the Progress, and the Path Forward</a> <br>
-                <font color="brown">VLDB 2021 (Tutorial)</font>
+                <span class="venue">VLDB 2021 (Tutorial)</span>
             </li>
-            <br>
             <li>
                 Rathijit Sen, Abhishek Roy, Alekh Jindal, Rui Fang, Jeff Zheng, Xiaolei Liu, Ruiping Li<br>
                 <a href="http://vldb.org/pvldb/vol14/p2855-sen.pdf">AutoExecutor: Predictive Parallelism for Spark SQL Queries</a> <br>
-                <font color="brown">VLDB 2021 (Demo)</font>
+                <span class="venue">VLDB 2021 (Demo)</span>
             </li>
-            <br>
             <li>
                 Abhishek Roy, Alekh Jindal, Priyanka Gomatam, Xiating Ouyang, Ashit Gosalia, Nishkam Ravi, Swinky Mann, Prakhar Jain<br>
                 <a href="http://vldb.org/pvldb/vol14/p3122-roy.pdf">SparkCruise: Workload Optimization in Managed Spark Clusters at Microsoft</a> <br>
-                <font color="brown">VLDB 2021 (Industry)</font>
+                <span class="venue">VLDB 2021 (Industry)</span>
             </li>
-            <br>            
             <li>
                 Parimarjan Negi, Matteo Interlandi, Ryan Marcus, Mohammad Alizadeh, Tim Kraska, Marc Friedman, Alekh Jindal<br>
                 <a href="https://dl.acm.org/doi/pdf/10.1145/3448016.3457568">Steering Query Optimizers: A Practical Take on Big Data Workloads</a> <br>
-                <font color="brown">SIGMOD 2021 (Industry)</font><br>
-                <b><a href="files/SIGMOD_Award.pdf"><font color="#009933">Industry Honorable Mention</font></a> (<a href="https://2021.sigmod.org/sigmod_best_papers.shtml">SIGMOD Announcement</a>)</b>
+                <span class="venue">SIGMOD 2021 (Industry)</span><br>
+                <b><a href="files/SIGMOD_Award.pdf"><span class="award">Industry Honorable Mention</span></a> (<a href="https://2021.sigmod.org/sigmod_best_papers.shtml">SIGMOD Announcement</a>)</b>
             </li>
-            <br>
             <li>
                 Alekh Jindal, Shi Qiao, Rathijit Sen, Hiren Patel<br>
                 <a href="papers/icde21.pdf">Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft</a> <br>
-                <font color="brown">ICDE 2021</font> (Industry)
+                <span class="venue">ICDE 2021</span> (Industry)
             </li>
-            <br>
             <li>
                 Alekh Jindal, Shi Qiao, Hiren Patel, Abhishek Roy, Jyoti Leeka, Brandon Haynes<br>
                 <a href="https://edbt2021proceedings.github.io/docs/p165.pdf">Production Experiences from Computation Reuse at Microsoft</a> <br>
-                <font color="brown">EDBT 2021</font> (Industry)
+                <span class="venue">EDBT 2021</span> (Industry)
             </li>
-            <br>            
             <li>
                 Alekh Jindal<br>
                 <a href="https://sigmodrecord.org/?smd_process_download=1&download_id=3949">Applied Research Lessons from CloudViews Project</a> <br>
-                <font color="brown">SIGMOD Record, September 2020</font>
+                <span class="venue">SIGMOD Record, September 2020</span>
             </li>
-            <br>
             <li>
                 Rathijit Sen, Alekh Jindal, Hiren Patel, Shi Qiao<br>
                 <a href="http://www.vldb.org/pvldb/vol13/p3326-sen.pdf">AutoToken: Predicting Peak Parallelism for Big Data Analytics at Microsoft</a> <br>
-                <font color="brown">VLDB 2020</font>, Tokyo, Japan.
+                <span class="venue">VLDB 2020</span>, Tokyo, Japan.
             </li>
-            <br>
             <li>
                 Malay Bag, Alekh Jindal, Hiren Patel<br>
                 <a href="https://www.usenix.org/system/files/hotcloud20_paper_bag.pdf">Towards Plan-aware Resource Allocation in Serverless Query Processing</a> <br>
-                <font color="brown">HotCloud 2020</font>, Boston, USA.
+                <span class="venue">HotCloud 2020</span>, Boston, USA.
             </li>
-            <br>                                                
             <li>
                 Tarique Siddiqui, Alekh Jindal, Shi Qiao, Hiren Patel, Wangchao Le<br>
                 <a href="papers/learnedCostsSIGMOD20.pdf">Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings</a> <br>
-                <font color="brown">SIGMOD 2020</font>, Portland, USA.
+                <span class="venue">SIGMOD 2020</span>, Portland, USA.
             </li>
-            <br>            
             <li>
                 H M Sajjad Hossain, Lucas Rosenblatt, Gilbert Antonius, Irene Shaffer, Remmelt Ammerlaan, Abhishek Roy, Markus Weimer, Hiren Patel, Marc Friedman, Shi Qiao, Peter Orenberg, Soundarajan Srinivasan, Vijay Ramani, Alekh Jindal<br>
                 <a href="papers/perfguard.pdf">PerfGuard: Deploying ML-for-Systems without Performance Regressions</a> <br>
-                <font color="brown">MLOps Systems 2020</font>, Austin, USA.
+                <span class="venue">MLOps Systems 2020</span>, Austin, USA.
             </li>
-            <br>                        
             <li>
                 Alekh Jindal, Hiren Patel, Abhishek Roy, Shi Qiao, Jarod Yin, Rathijit Sen, Subru Krishnan<br>
                 <a href="papers/241-jindal.pdf">Peregrine: Workload Optimization for Cloud Query Engines</a> <br>
-                <font color="brown">SOCC 2019</font>, Santa Cruz, California.
+                <span class="venue">SOCC 2019</span>, Santa Cruz, California.
             </li>
-            <br>
             <li>
                 Hiren Patel, Alekh Jindal, Clemens Szyperski<br>
                 <a href="papers/socc19posters-final147.pdf">Big Data Processing at Microsoft: Hyper Scale, Massive Complexity, and Minimal Cost</a> <br>
-                <font color="brown">SOCC 2019</font>, Santa Cruz, California. (poster)
+                <span class="venue">SOCC 2019</span>, Santa Cruz, California. (poster)
             </li>
-            <br> 
             <li>
                 Chenggang Wu, Alekh Jindal, Saeed Amizadeh, Hiren Patel, Wangchao Le, Shi Qiao, Sriram Rao<br>
                 <a href="http://www.vldb.org/pvldb/vol12/p210-wu.pdf">Towards a Learning Optimizer for Shared Clouds</a> <br>
-                <font color="brown">VLDB 2019/PVLDB</font>, Los Angeles, USA.
+                <span class="venue">VLDB 2019/PVLDB</span>, Los Angeles, USA.
             </li>
-            <br>            
             <li>
                 Abhishek Roy, Alekh Jindal, Hiren Patel, Ashit Gosalia, Subru Krishnan, Carlo Curino<br>
                 <a href="http://www.vldb.org/pvldb/vol12/p1850-roy.pdf">SparkCruise: Handsfree Computation Reuse in Spark</a> <br>
-                <font color="brown">VLDB 2019/PVLDB</font>, Los Angeles, USA. (Demo paper)
+                <span class="venue">VLDB 2019/PVLDB</span>, Los Angeles, USA. (Demo paper)
             </li>
-            <br>
             <li>
                 Alekh Jindal, Lalitha Viswanathan, Konstantinos Karanasos <br>
                 <a href="https://arxiv.org/pdf/1906.06590">Query and Resource Optimizations: A Case for Breaking the Wall in Big Data Systems</a> <br>
-                <font color="brown">arXiv:1906.06590 [cs.DB], June 2019</font>
+                <span class="venue">arXiv:1906.06590 [cs.DB], June 2019</span>
             </li>
-            <br>
             <li>
                 Alekh Jindal, Konstantinos Karanasos, Sriram Rao, Hiren Patel<br>
                 <a href="papers/p800-jindal.pdf">Selecting Subexpressions to Materialize at Datacenter Scale</a> <br>
-                <font color="brown">VLDB 2018/PVLDB</font>, Rio de Janeiro, Brazil.
+                <span class="venue">VLDB 2018/PVLDB</span>, Rio de Janeiro, Brazil.
             </li>
-            <br>            
             <li>
                 Alekh Jindal, Shi Qiao, Hiren Patel, Jarod Yin, Jieming Di, Malay Bag, Marc Friedman, Yifung Lin, Konstantinos Karanasos, Sriram Rao<br>
                 <a href="papers/modip650-jindalA.pdf">Computation Reuse in Analytics Job Service at Microsoft</a> <br>
-                <font color="brown">SIGMOD 2018</font>, Houston, USA.
+                <span class="venue">SIGMOD 2018</span>, Houston, USA.
             </li>
-            <br>
             <li>
                 Lalitha Viswanathan, Alekh Jindal, Konstantinos Karanasos<br>
                 <a href="papers/QueryAndResourceOpt.pdf">Query and Resource Optimization: Bridging the Gap</a> <br>
-                <font color="brown">ICDE 2018</font>, Paris, France (Short paper).
+                <span class="venue">ICDE 2018</span>, Paris, France (Short paper).
             </li>
 		</ul>
         
         
         
         <!--<br>
-        <font size="5">Talks and Posters</font>
+        <h2>Talks and Posters</h2>
         <ul>
         </ul>-->
 
         <!--<br>
-        <font size="5">Talks and Posters</font>
+        <h2>Talks and Posters</h2>
         <ul>
         </ul>-->
 
-        <br>
-        <font size="5">Talks</font>
+        <h2>Talks</h2>
         <ul>
             <li>
                 <a href="slides/PracticalAspects.pdf">Practical Aspects of Systems that Learn: Ambition vs Reality</a> <br>                
                 Presenter: Alekh Jindal<br>
                 <a href="https://www.ladsios.org/">LADSIOS @ VLDB</a> 2021.<br>                
             </li>
-            <br>
             <li>
                 <i>The Cosmos Big Data Platform at Microsoft: Over a Decade of Progress and a Decade to Look Forward</i> <br>                
                 Presenters: Hiren Patel, Alekh Jindal<br>
                 VLDB 2021.<br>                
             </li>
-            <br>
             <li>
                 <a href="slides/ICDE21.pdf">Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft</a> <br>
                 Presenter: Alekh Jindal<br>
                 ICDE 2021.<br>                
             </li>
-            <br>
             <li>
                 <a href="slides/Talk_EDBT21.pdf">Production Experiences from Computation Reuse at Microsoft</a> <br>
                 Presenter: Alekh Jindal<br>
@@ -316,50 +254,42 @@
                 <a href="https://www.youtube.com/watch?v=S8xXEidVPmk">Teaser</a>                
                 <a href="https://edbt2021proceedings.github.io/ads/a165.png">Poster</a>
             </li>            
-            <br>
             <li>
                 <i>Optimizing Cloud Query Engines at Microsoft</i> <br>                
                 Presenter: Alekh Jindal<br>
                 TU Berlin, Germany, 2020.
             </li>
-            <br>
             <li>
                 <a href="slides/Talk_NWDS20.pdf">Peregrine: Workload Optimization for Cloud Query Engines</a> <br>                
                 Presenter: Alekh Jindal<br>
                 North West Database Society 2020, Seattle, USA.<br>                
             </li>
-            <br>
             <li>
                 <a href="slides/PeregrineSOCC19.pdf">Peregrine: Workload Optimization for Cloud Query Engines</a> <br>                
                 Presenter: Alekh Jindal<br>
                 SOCC 2019, Santa Cruz, USA.
             </li>
-            <br>
             <li>
                 <i>Building a Learning Optimizer at Microsoft</i> <br>                
                 Presenter: Alekh Jindal<br>
                 MIT, Cambridge, USA, 2019.
             </li>
-            <br>
             <li>
                 <i>Building a Learning Optimizer at Microsoft</i> <br>                
                 Presenter: Alekh Jindal<br>
                 University of Wisconsin, Madison, USA, 2019.
             </li>
-            <br>
             <li>
                 <a href="slides/NwDB_Annual_2019.pdf">Towards a Learning Optimizer for Shared Clouds</a> <br>                
                 Presenter: Alekh Jindal<br>
                 North West Database Society 2019, Redmond, USA.<br>
                 <a href="https://youtu.be/3Q5HcituSfo?t=888">YouTube Video</a>
             </li>
-            <br>
             <li>
                 <a href="slides/CloudViews_SIGMOD18.pdf">Computation Reuse in Analytics Job Service at Microsoft</a> <br>
                 Presenter: Alekh Jindal<br>
                 SIGMOD 2018, Houston, USA.
             </li>
-            <br>
             <li>
                 <a href="posters/cloudviews-poster-sigmod18.pdf">CloudViews Poster</a> <br>
                 Presenters: CloudViews Team<br>
@@ -367,68 +297,59 @@
             </li>
         </ul>
 
-        <br>
-        <font size="5">Patents</font>
+        <h2>Patents</h2>
         <ul>
             <li>
-                HS Patel, Q Shi, A Jindal, MK Bag, R Sen, CA Curino<br>
-                <i>Resource optimization for serverless query processing (US Patent 11,455,192)</i><br>
-                <font color="brown">US Patent App. 17/894,628</font>
+                J Leeka, S Gakhar, HS Patel, MT Friedman, B Haynes, Q Shi, A Jindal<br>
+                <i>Query set optimization in a data analytics pipeline</i><br>
+                <span class="venue">US Patent 11,847,118</span>
             </li>
-            <br>
+            <li>
+                HS Patel, Q Shi, A Jindal, MK Bag, R Sen, CA Curino<br>
+                <i>Resource optimization for serverless query processing</i><br>
+                <span class="venue">US Patent 11,455,192, US Patent 11,934,874</span>
+            </li>
             <li>
                 R Sen, A Jindal, AY Pimpley, S Li, A Srivastava, VL Rohra, Y Zhu, HS Patel, QIAO Shi, MT Friedman, CA Szyperski<br>
-                <i>Optimizing job runtimes via prediction-based token allocation (US20220100763A1)</i><br>                
-                <font color="brown">US Patent App. 17/060,053</font>
+                <i>Optimizing job runtimes via prediction-based token allocation</i><br>
+                <span class="venue">US Patent 12,189,629</span>
             </li>
-            <br>
             <li>
                 Y Zhu, A Jindal, MK Bag, HS Patel<br>
                 <i>Data-driven checkpoint selector</i><br>
-                <font color="brown">US Patent 11,416,487</font>
+                <span class="venue">US Patent 11,416,487</span>
             </li>
-            <br>
         	<li>
                 IR Shaffer, RHL Ammerlaan, G Antonius, MT Friedman, ROY Abhishek, L Rosenblatt, VK Ramani, QIAO Shi, A Jindal, P Orenberg, HM Sajjad Hossain, S Srinivasan, HS Patel, M Weimer<br>
                 <i>System and method for machine learning for system deployments without performance regressions</i><br>
-                <font color="brown">US Patent App. 16/840,205</font>
+                <span class="venue">US Patent 11,748,350, US Patent 12,093,255</span>
             </li>            
-            <br>
         	<li>
                 HS Patel, R Sen, Z Yin, Q Shi, ROY Abhishek, A Jindal, SV Krishnan, CA Curino<br>
-                <i>Cloud based query workload optimization (US20210089532A1)</i><br>
-                <font color="brown">US Patent App. 16/581,905</font>
+                <i>Cloud based query workload optimization</i><br>
+                <span class="venue">US Patent 12,013,853</span>
             </li>
-            <br>
             <li>            
                 TA Siddiqui, A Jindal, Q Shi, HS Patel<br>
                 <i>Learned resource consumption model for optimizing big data queries</i><br>
-                <font color="brown">US Patent App. 16/511,966</font>
+                <span class="venue">US Patent 12,572,537</span>
             </li>
-            <br>
             <li>
                 A Jindal, H Patel, S Amizadeh, C Wu<br>
                 <i>Learning Optimizer for Shared Cloud</i><br>
-                <font color="brown">US Patent 11,074,256</font>
+                <span class="venue">US Patent 11,074,256</span>
             </li>
-            <br>
             <li>
                 A Jindal, K Karanasos, HS Patel, S Rao Sriram <br>
                 <i>Selection of Subexpressions to Materialize for Datacenter Scale</i><br>
-                <font color="brown">US Patent 10,726,014</font>
+                <span class="venue">US Patent 10,726,014</span>
             </li>            
-            <br>
             <li>
                 A Jindal, H Patel, Q Shi, J Di, MK Bag, Z Yin <br>
                 <i>Computation Reuse in Analytics Job Service</i><br>
-                <font color="brown">US Patent 11,068,482</font>
+                <span class="venue">US Patent 11,068,482</span>
             </li>
         </ul>
 
-    </td> 
-    </tr> 
-    </tbody></table> 
- 
-
- 
- </body></html>
+        </main>
+</body></html>

@@ -1,104 +1,92 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"> 
-    <meta http-equiv="Keywords" content="Microsoft,Microsoft CISL,Microsoft Reserach,database research,Database Systems,Big Data">
-     
-    <meta name="author" content="Alekh Jindal "> 
-    <link rel="stylesheet" type="text/css" href="./files/style.css">
-    <title>CloudViews</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Microsoft,Microsoft CISL,Microsoft Reserach,database research,Database Systems,Big Data">
+<meta name="author" content="Alekh Jindal">
+<link rel="stylesheet" href="./files/style.css">
+<title>CloudViews</title>
 </head> 
  
  
 <body>
-    <div class="divHead">
-    <table cellpadding="0" cellspacing="0" width="650">
-      <tbody>
-      <tr>
-        <td valign="center">
-            <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0" max-age=3600></a>
-        </td>
-        
-      </tr>
-      </tbody>
-    </table>
-    </div>
-
-    <hr noshade width="100%" color="#993333">
+    <nav class="topnav"><a href="index.html">&larr; Alekh Jindal</a></nav>
+<header class="brand">
+  <a href="http://www.microsoft.com/"><img src="./files/Microsoft_logo.png" alt="Microsoft" title="Microsoft" height="70" border="0"></a>
+</header>
     
-    <table>
-      <tbody><tr> 
-    
-        <td valign="top" width="750">
-         
- 
- 
-        <br>
-        <img src="files/cloudviews.jpg" class="img img-avatar" alt="CloudViews" width="400">
-        
-        <p align="justify">
+    <main class="content">
+        <div class="intro">
+          <div class="intro__media">
+            <img src="files/cloudviews.jpg" alt="CloudViews">
+          </div>
+          <div class="intro__text">
+        <p>
         Analytics-as-a-service, or analytics job service, is emerging as a new paradigm for enterprise data analytics. 
         These services are motivated by the fact that setting up and running data analytics is a major hurdle for enterprises. Although platform as a service (PaaS), software as a service (SaaS), and more recently database as a service (DBaaS) have eased the pain of provisioning and scaling hardware and software infrastructures, users are still responsible for managing and tuning their servers. A job service mitigates this pain by offering server-less analytics capability that does not require users to provision and manage servers. Instead, the service provider takes care of managing and tuning a query engine that can scale instantly and on demand. Users can get started quickly using the all familiar SQL interface and pay only for the processing used for each query, in contrast to paying for the entire provisioned server infrastructure irrespective of the compute resources actually used.
         </p>
         
-        <p align="justify">
+        <p>
         At Microsoft, SCOPE is an analytics-as-a-service which is used for internal data analytics. SCOPE is deployed over hundreds of thousands of machines, running hundreds of thousands of production analytic jobs per day that are written by thousands of developers, processing several exabytes of data per day, and involving several hundred petabytes of I/O. SCOPE users are not required to manage or tune their hardware and software infrastructure, and they concentrate only on their processing logic.
         However, the shared nature of SCOPE job service across several users and teams leads to significant overlaps in partial computations, i.e., parts of the processing are duplicated across multiple jobs, thus generating redundant costs. The goal of CloudViews is to automatically detect and reuse overlapping computations in the SCOPE job service, while allowing users to write their jobs just as before, i.e., with zero changes to user scripts.
         </p>
-        
-        
-        <br>
-        <font size="5">Publications</font>
+          </div>
+        </div>
+
+        <h2>Publications</h2>
         <ul>
             <li>
                 Sunny Gakhar, Joyce Cahoon, Wangchao Le, Xiangnan Li, Kaushik Ravichandran, Hiren Patel, Marc Friedman, Brandon Haynes, Shi Qiao, Alekh Jindal, Jyoti Leeka<br>
                 <a href="https://www.vldb.org/pvldb/vol15/p3710-leeka.pdf">Pipemizer: An Optimizer for Analytics Data Pipelines</a><br>
-                <font color="brown">VLDB 2022</font>, Sydney, Australia. (Demo paper)
+                <span class="venue">VLDB 2022</span>, Sydney, Australia. (Demo paper)
         	</li>
-        	<br>
             <li>
                 Yiwen Zhu, Matteo Interlandi, Abhishek Roy, Krishnadhan Das, Hiren Patel, Malay Bag, Hitesh Sharma, Alekh Jindal<br>
                 <a href="http://vldb.org/pvldb/vol14/p2505-zhu.pdf">Phoebe: A Learning-based Checkpoint Optimizer</a> <br>
-                <font color="brown">VLDB 2021</font>
+                <span class="venue">VLDB 2021</span>
             </li>
-            <br>
             <li>
                 Alekh Jindal, Shi Qiao, Hiren Patel, Abhishek Roy, Jyoti Leeka, Brandon Haynes<br>
                 <a href="https://edbt2021proceedings.github.io/docs/p165.pdf">Production Experiences from Computation Reuse at Microsoft</a> <br>
-                <font color="brown">EDBT 2021</font> (Industry)
+                <span class="venue">EDBT 2021</span> (Industry)
             </li>
-            <br>            
             <li>
                 Alekh Jindal<br>
                 <a href="https://sigmodrecord.org/?smd_process_download=1&download_id=3949">Applied Research Lessons from CloudViews Project</a> <br>
-                <font color="brown">SIGMOD Record, September 2020</font>
+                <span class="venue">SIGMOD Record, September 2020</span>
             </li>
-            <br>  
             <li>
                 Abhishek Roy, Alekh Jindal, Hiren Patel, Ashit Gosalia, Subru Krishnan, Carlo Curino<br>
                 <a href="http://www.vldb.org/pvldb/vol12/p1850-roy.pdf">SparkCruise: Handsfree Computation Reuse in Spark</a> <br>
-                <font color="brown">VLDB 2019/PVLDB</font>, Los Angeles, USA. (Demo paper)
+                <span class="venue">VLDB 2019/PVLDB</span>, Los Angeles, USA. (Demo paper)
             </li>
-            <br>            
             <li>
                 Alekh Jindal, Konstantinos Karanasos, Sriram Rao, Hiren Patel<br>
                 <a href="papers/p800-jindal.pdf">Selecting Subexpressions to Materialize at Datacenter Scale</a> <br>
-                <font color="brown">VLDB 2018/PVLDB</font>, Rio de Janeiro, Brazil.
+                <span class="venue">VLDB 2018/PVLDB</span>, Rio de Janeiro, Brazil.
             </li>
-            <br>            
             <li>
                 Alekh Jindal, Shi Qiao, Hiren Patel, Jarod Yin, Jieming Di, Malay Bag, Marc Friedman, Yifung Lin, Konstantinos Karanasos, Sriram Rao<br>
                 <a href="papers/modip650-jindalA.pdf">Computation Reuse in Analytics Job Service at Microsoft</a> <br>
-                <font color="brown">SIGMOD 2018</font>, Houston, USA.
-            </li>            
+                <span class="venue">SIGMOD 2018</span>, Houston, USA.
+            </li>
 		</ul>
-        
-        
-        
-        <br>
 
-        
-    </td> 
-    </tr> 
-    </tbody></table> 
+        <h2>Patents</h2>
+        <ul>
+            <li>
+                Brandon Haynes, Rana Alotaibi, Anna Pavlenko, Yuanyuan Tian, Jyoti Leeka, Alekh Jindal<br>
+                <i><a href="https://patents.google.com/patent/US12436950B1/en">Machine learning accelerated semantic equivalence detection.</a></i><br>
+                <span class="venue">US Patent 12,436,950</span>
+            </li>
+            <li>
+                Brandon Haynes, Jyoti Leeka, Anna Pavlenko, Rana Alotaibi, Alekh Jindal<br>
+                <i><a href="https://patents.google.com/patent/US12561321B2/en">Materialized view generation and provision based on queries having a semantically equivalent or containment relationship.</a></i><br>
+                <span class="venue">US Patent 12,561,321, US Patent App. US20260072913A1</span>
+            </li>
+        </ul>
+    </main>
  
 
  
